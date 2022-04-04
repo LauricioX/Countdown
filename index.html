@@ -6,10 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+  }
+
+  h1{
+      font-size: 3rem;
+      font-weight: 500;
+      margin-top: 5rem;
+
+    }
+  
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .text{
+        font-size: 5rem;
+        font-weight: 300;
+        margin: 2rem;
+    }
+
+
+.dias{
+    text-align: center;
+}
+
+.dias span{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width:641px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+    
+}
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url(https://flevix.com/wp-content/uploads/2020/01/Bounce-Bar-Preloader-1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+
+
+
 <body>
+    <div class="preloader">
+          
+    </div>
     <h1>ano novo em.....</h1>
 
-    <div class="container">
+    <div class="container" style="background-color: aliceblue; padding: 10px; border: 2px solid black;">
         <div class="dias">
             <p class="text" id="dias">0</p>
             <span>dias</span>
@@ -31,5 +105,10 @@
         </div>
 
     </div>
+
+
+ <script src="script.js"></script>
+
+
 </body>
 </html>
